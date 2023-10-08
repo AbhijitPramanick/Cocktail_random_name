@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: radial-gradient(
+    to right,
+    rgb(63, 1, 63),
+    rgb(106, 1, 90),
+    rgb(63, 1, 63)
+  ); */
+  background-image: radial-gradient(
+    rgb(124, 6, 175) 0,
+    rgb(67, 2, 95),
+    rgb(59, 2, 59)
+  );
+}
+.hero {
+  /* border: 2px solid white; */
+  width: 90vw;
+  height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.drinks_finder {
+  width: 40%;
+  color: white;
+  background: linear-gradient(to right bottom, rgb(1, 1, 161), rgb(78, 1, 78));
+  border-radius: 10px;
+  padding: 1.5vh;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.drinks_finder:hover {
+  background: linear-gradient(
+    to right bottom,
+    rgb(12, 12, 250),
+    rgb(133, 1, 133)
+  );
+}
+.drinks_finder:active {
+  background: linear-gradient(to right bottom, rgb(78, 1, 78), blue);
+}
+.display {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+  padding-inline: auto;
+}
+.drink-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  height: fit-content;
+  width: 20%;
+  /* border-bottom: 1px solid white; */
+}
+.drink-container img {
+  width: 15vw;
+  /* height: 40vh; */
+  border-radius: 10px;
+}
+.drink-container p {
+  margin-top: 2vh;
+  font-size: 1.4rem;
+}
